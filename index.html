@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Search</title>
+		<link href="/dist/output.css" rel="stylesheet" />
+		<script src="https://unpkg.com/feather-icons"></script>
+	</head>
+	<body class="box-border m-0 p-0 bg-[#202124]">
+		<header class="flex flex-col">
+			<div
+				class="flex w-[100%] justify-between items-center px-4 pt-4 lg:pl-20 lg:pr-10 lg:pt-10">
+				<i data-feather="menu" class="text-white lg:hidden"></i>
+
+				<div class="flex gap-10 items-center lg:w-[70%]">
+					<img
+						src="./public/google.png"
+						class="h-[30px] object-cover lg:h-[30px]" />
+					<div
+						class="w-[70%] rounded-[20px] h-[40px] lg:flex items-center bg-[#303134] px-4 gap-5 hidden">
+						<textarea
+							type="search"
+							class="bg-[#303134] resize-none h-full w-[70%]"></textarea>
+						<i data-feather="x" class="text-white"></i>
+						<i data-feather="mic" class="text-white"></i>
+						<i data-feather="image" class="text-white"></i>
+						<i data-feather="search" class="text-white"></i>
+					</div>
+				</div>
+
+				<div class="flex gap-4 items-center">
+					<i data-feather="bell" class="text-white md:hidden"></i>
+					<i
+						data-feather="settings"
+						class="text-white hidden lg:flex"></i>
+					<i
+						data-feather="grid"
+						class="text-white hidden lg:inline-flex"></i>
+					<button
+						type="button"
+						class="rounded-[50%] lg:rounded-[70%] bg-[#455A64] px-2 py-1 lg:px-3 lg:py-1">
+						N
+					</button>
+				</div>
+			</div>
+			<div
+				class="w-[90%] rounded-[20px] h-[40px] px-4 mx-auto mt-4 flex items-center bg-[#4B4F53] gap-2 md:gap-5 lg:hidden">
+				<i data-feather="search" size="16px" class="text-white"></i>
+				<textarea
+					type="search"
+					class="bg-[#4B4F53] resize-none h-full w-[80%] border-0 outline-none py-2"></textarea>
+				<i data-feather="mic" class="text-white"></i>
+				<i data-feather="image" class="text-white"></i>
+			</div>
+		</header>
+		<!-- Categories -->
+		<section
+			class="flex w-full justify-between items-center lg:border-bl lg:border-slate-700 pb-3">
+			<section
+				class="categories scroll-smooth w-full grid grid-flow-col auto-cols-[21%] md:auto-cols-[14%] py-3 px-5 overflow-x-auto snap-none gap-2 md:gap-4 lg:w-[70%] lg:flex lg:overflow-x-hidden lg:pl-20 lg:pt-4">
+				<button
+					class="rounded-[20px] px-3 py-2 text-white border border-slate-700 text-[14px]">
+					News
+				</button>
+				<button
+					class="rounded-[20px] px-3 py-2 text-white border border-slate-700 text-[14px]">
+					Images
+				</button>
+				<button
+					class="rounded-[20px] px-3 py-2 text-white border border-slate-700 text-[14px]">
+					Videos
+				</button>
+				<button
+					class="rounded-[20px] px-3 py-2 text-white border border-slate-700 text-[14px]">
+					Types
+				</button>
+				<button
+					class="rounded-[20px] px-3 py-2 text-white border border-slate-700 text-[14px] whitespace-nowrap">
+					App
+				</button>
+				<button
+					class="rounded-[20px] px-3 py-2 text-white border border-slate-700 text-[14px]] whitespace-nowrap">
+					Instagram
+				</button>
+				<button
+					class="rounded-[20px] px-3 py-2 text-white border border-slate-700 text-[12px]">
+					Meta
+				</button>
+				<button
+					class="rounded-[20px] px-3 py-2 text-white border border-slate-700 text-[12px]">
+					Clothing
+				</button>
+				<button
+					class="rounded-[20px] px-3 py-2 text-white border border-slate-700 text-[12px]">
+					Anddriod
+				</button>
+			</section>
+			<section
+				class="hidden location text-white lg:flex justify-between px-4 py-3 text-[14px] items-center lg:pr-10 gap-3">
+				<select class="bg-[#202124]">
+					<option value="">All Filters</option>
+					<option value="">Images</option>
+					<option value="">Maps</option>
+					<option value="">Videos</option>
+					<option value="">News</option>
+					<option>Books</option>
+				</select>
+				<button
+					type="button"
+					class="pr-5 border-l px-2 border-slate-700">
+					Tools
+				</button>
+				<button type="button" class="px-2">SafeSearch On</button>
+			</section>
+		</section>
+
+		<section
+			class="location text-white flex justify-between px-4 py-3 text-[14px] items-center">
+			<p>
+				Result for Lekki phase I, Lagos
+
+				<span class="text-blue-500">. Choose location</span>
+			</p>
+			<i data-feather="more-vertical"></i>
+		</section>
+		<!-- results -->
+		<section
+			class="flex gap-4 text-white items-center pl-4 lg:hidden py-4 border-y-4 border-black">
+			<p>See results about</p>
+			<div
+				class="flex gap-2 items-center bg-[#303134] px-2 py-2 rounded-[8px]">
+				<img
+					src="/public/thread1.jpg"
+					alt="Thread picture"
+					class="h-[2rem]" />
+				<div class="">
+					<h3 class="text-[12px]">Threads</h3>
+					<p class="text-[12px]">Television films</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Top stories -->
+		<script>
+			feather.replace();
+		</script>
+	</body>
+</html>

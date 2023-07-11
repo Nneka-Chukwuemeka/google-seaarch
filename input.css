@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* select { */
+/* -webkit-user-select: none; */
+/* -moz-user-select: none; */
+/* background: translate; */
+/* color: white; */
+/* appearance: none; */
+/* } */
+.categories::-webkit-scrollbar {
+	display: none;
+}
