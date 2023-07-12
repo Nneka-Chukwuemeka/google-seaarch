@@ -9,6 +9,7 @@
 /* color: white; */
 /* appearance: none; */
 /* } */
-.categories::-webkit-scrollbar {
+.categories::-webkit-scrollbar,
+.card::webkit-scrollbar {
 	display: none;
 }
