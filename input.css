@@ -9,7 +9,12 @@
 /* color: white; */
 /* appearance: none; */
 /* } */
-.categories::-webkit-scrollbar,
-.card::webkit-scrollbar {
+.categories::-webkit-scrollbar {
 	display: none;
+}
+.card::-webkit-scrollbar {
+	display: none;
+}
+.card-image {
+	background-image: url('./public/bbc.jpg');
 }

@@ -2,7 +2,11 @@
 module.exports = {
 	content: ['./**/*.html'],
 	theme: {
-		extend: {},
+		extend: {
+			backgroundImage: {
+				card: "url('./public/guardian.jpg')",
+			},
+		},
 	},
 	plugins: [],
 };
