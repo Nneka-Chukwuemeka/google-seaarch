@@ -579,10 +579,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -636,16 +632,12 @@ video {
   height: 40px;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-auto {
   height: auto;
 }
 
-.h-\[10rem\] {
-  height: 10rem;
+.h-full {
+  height: 100%;
 }
 
 .w-\[100\%\] {
@@ -672,18 +664,6 @@ video {
   flex-basis: 50%;
 }
 
-.basis-1\/3 {
-  flex-basis: 33.333333%;
-}
-
-.basis-1 {
-  flex-basis: 0.25rem;
-}
-
-.basis-11\/12 {
-  flex-basis: 91.666667%;
-}
-
 .resize-none {
   resize: none;
 }
@@ -692,8 +672,16 @@ video {
   grid-auto-columns: 27%;
 }
 
-.auto-cols-\[67\%\] {
-  grid-auto-columns: 67%;
+.auto-cols-\[61\%\] {
+  grid-auto-columns: 61%;
+}
+
+.auto-cols-\[71\%\] {
+  grid-auto-columns: 71%;
+}
+
+.auto-cols-\[77\%\] {
+  grid-auto-columns: 77%;
 }
 
 .grid-flow-col {
@@ -710,10 +698,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .gap-10 {
@@ -820,30 +804,6 @@ video {
   background-color: rgb(75 79 83 / var(--tw-bg-opacity));
 }
 
-.bg-card {
-  background-image: url('./public/guardian.jpg');
-}
-
-.bg-\[url\(\"\.\/public\/guardian\.jpg\"\)\] {
-  background-image: url("./public/guardian.jpg");
-}
-
-.bg-\[url\(\&quot\;\.\/public\/guardian\.jpg\&quot\;\)\] {
-  background-image: url(&quot;./public/guardian.jpg&quot;);
-}
-
-.bg-\[url\(\'\.\/public\/guardian\.jpg\'\)\] {
-  background-image: url('./public/guardian.jpg');
-}
-
-.bg-\[url\(\'\.\/guardian\.jpg\'\)\] {
-  background-image: url('./guardian.jpg');
-}
-
-.bg-\[url\(\'public\/guardian\.jpg\'\)\] {
-  background-image: url('public/guardian.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -852,19 +812,9 @@ video {
   background-repeat: no-repeat;
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
 .p-0 {
@@ -993,12 +943,6 @@ video {
   background-image: url('./public/bbc.jpg');
 }
 
-@media (min-width: 640px) {
-  .sm\:auto-cols-\[51\%\] {
-    grid-auto-columns: 51%;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:hidden {
     display: none;
@@ -1006,26 +950,6 @@ video {
 
   .md\:auto-cols-\[14\%\] {
     grid-auto-columns: 14%;
-  }
-
-  .md\:auto-cols-\[47\%\] {
-    grid-auto-columns: 47%;
-  }
-
-  .md\:auto-cols-\[23\%\] {
-    grid-auto-columns: 23%;
-  }
-
-  .md\:auto-cols-\[43\%\] {
-    grid-auto-columns: 43%;
-  }
-
-  .md\:auto-cols-\[36\%\] {
-    grid-auto-columns: 36%;
-  }
-
-  .md\:auto-cols-\[35\%\] {
-    grid-auto-columns: 35%;
   }
 
   .md\:auto-cols-\[37\%\] {
@@ -1038,14 +962,6 @@ video {
 
   .md\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .md\:pt-6 {
-    padding-top: 1.5rem;
-  }
-
-  .md\:pt-10 {
-    padding-top: 2.5rem;
   }
 
   .md\:pt-5 {
